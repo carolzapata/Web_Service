@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cecyt9.myapplication.calcu">
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Numero1"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="65dp"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Numero2"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:id="@+id/buttonMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="58dp"
+        android:text="+"
+        android:onClick="onClickMas"/>
+
+    <Button
+        android:id="@+id/buttonMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMas"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/buttonMas"
+        android:layout_toRightOf="@+id/buttonMas"
+        android:text="-"
+        android:onClick="onClickMenos"/>
+
+    <Button
+        android:id="@+id/buttonPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMas"
+        android:layout_alignStart="@+id/buttonMas"
+        android:layout_below="@+id/buttonMas"
+        android:layout_marginTop="51dp"
+        android:text="*"
+        android:onClick="onClickPor"/>
+
+    <Button
+        android:id="@+id/buttonDivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMenos"
+        android:layout_alignStart="@+id/buttonMenos"
+        android:layout_alignTop="@+id/buttonPor"
+        android:text="/"
+        android:onClick="onClickDivi"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonPor"
+        android:layout_alignStart="@+id/buttonPor"
+        android:layout_below="@+id/buttonPor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="41dp"
+        android:text="" />
+</RelativeLayout>
